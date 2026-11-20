@@ -1,0 +1,51 @@
+{
+  "name": "dsh-proxy-identity",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: attach fixed identity headers to every model request so a shared LLM gateway or memory proxy recognizes the client without an interactive picker.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check index.js",
+    "test": "node --test tests/index.test.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "identity",
+    "request-headers",
+    "llm-gateway"
+  ],
+  "license": "MIT",
+  "author": "xiaoxi-ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoxi-ai/dsh-proxy-identity.git"
+  },
+  "homepage": "https://github.com/xiaoxi-ai/dsh-proxy-identity#readme"
+}

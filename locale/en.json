@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Proxy identity headers",
+    "description": "Adds fixed identity headers to model requests so a shared gateway or memory proxy recognizes the client instead of asking it to choose a team and an agent every session."
+  }
+}

@@ -1,0 +1,17 @@
+# Bundle layer of dsh-proxy-identity.
+#
+# The row is inserted without configuration, so the plugin mounts as a no-op.
+# Point it at your gateway in your profile's cordis.patch.yml and restate the
+# whole `config` value there (a patch replaces a row's config instead of
+# merging it):
+#
+#   - id: proxy-identity
+#     config:
+#       match:
+#         - https://gateway.example.com/dsh/
+#       headers:
+#         x-team-id: team-xxxxxxxx
+#         x-agent-id: agt-xxxxxxxxx
+- insert:
+    - id: proxy-identity
+      name: dsh-proxy-identity
