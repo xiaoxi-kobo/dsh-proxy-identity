@@ -23,7 +23,7 @@ It is deliberately gateway-agnostic: it knows nothing about any particular proxy
 ## Install
 
 ```sh
-dsh plugin --profile web add github:xiaoxi-ai/dsh-proxy-identity
+dsh plugin --profile web add github:xiaoxi-kobo/dsh-proxy-identity
 ```
 
 Then configure it in `~/.dsh/profiles/web/cordis.patch.yml`. A patch replaces a row's whole `config`, so restate every key you need:

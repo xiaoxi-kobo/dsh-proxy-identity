@@ -23,7 +23,7 @@
 ## 安装
 
 ```sh
-dsh plugin --profile web add github:xiaoxi-ai/dsh-proxy-identity
+dsh plugin --profile web add github:xiaoxi-kobo/dsh-proxy-identity
 ```
 
 然后在 `~/.dsh/profiles/web/cordis.patch.yml` 里配置。patch 会整体替换一行的 `config`，所以要写全需要的键：
